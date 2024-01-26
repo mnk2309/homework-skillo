@@ -44,7 +44,8 @@ for x, y in values:
 
     print(f"{x} | {y} | {x_and_y} | {x_or_y} | {not_x} | {not_y}")
 
-print("Homework lecture 3: Work in progress...")
+
+
 
 
 
