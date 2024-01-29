@@ -125,3 +125,20 @@ while True:
         print("Incorrect! Try again")
 
 
+print("Problem 6")
+
+integer = int(input("Put your number: "))
+
+print(f'Multiplication table for {integer}')
+for x in range(1, 11):
+    result =integer * x
+    print(f"{integer} * {x} = {result}")
+
+print("Problem 8")
+
+n = int(input("Declare number of rows: "))
+for a in range(1, n + 1):
+    for b in range(1, a + 1):
+        print(b, end="")
+    print()
+
