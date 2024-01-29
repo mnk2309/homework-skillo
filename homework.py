@@ -44,7 +44,62 @@ for x, y in values:
 
     print(f"{x} | {y} | {x_and_y} | {x_or_y} | {not_x} | {not_y}")
 
-print("Homework lecture 3: Work in progress...")
+print("Homework lecture 3:")
+print("Problem 0")
+
+number = int(input("Write a number: "))
+
+if number %2 == 0:
+    print(f'{number} is even')
+else:
+    print(f'{number} is odd')
+
+print("Problem 1")
+Sum = int()
+for digit in range(1, 101):
+    if digit %2 == 0:
+        Sum += digit
+print('Sum', Sum)
+
+print("Problem 2")
+
+answer = 23
+while True:
+    userAnswer = int(input("How much is 5 + 17: "))
+    if userAnswer == answer:
+        print("Coreect!")
+        break
+    else:
+        print("Incorrect! Try again")
+
+print("Problem 3")
+
+for i in range(1, 1001):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
+print("Problem 4")
+
+import random
+
+targetNumber = random.randint(1, 100)
+
+while True:
+    guess = int(input("What is the correct number between 1 and 100? : "))
+
+    if guess == targetNumber:
+        print("Correct! You win!")
+        break
+    elif guess < targetNumber:
+        print("Too low! Try again.")
+    elif guess > targetNumber:
+        print("Too high! Try again.")
 
 
 
