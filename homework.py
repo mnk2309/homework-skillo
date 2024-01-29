@@ -63,7 +63,7 @@ print('Sum', Sum)
 
 print("Problem 2")
 
-answer = 23
+answer = 22
 while True:
     userAnswer = int(input("How much is 5 + 17: "))
     if userAnswer == answer:
@@ -101,7 +101,27 @@ while True:
     elif guess > targetNumber:
         print("Too high! Try again.")
 
+print("Problem 5")
 
+import random
 
+while True:
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+
+    operator = random.choice(['+', '-'])
+
+    if operator == "+":
+        corAns = num1 + num2
+    elif operator == "-":
+        corAns = num1 - num2
+
+    userAnswer = int(input(f"How much is {num1} {operator} {num2} equal to? "))
+
+    if userAnswer == corAns:
+        print("Correct!")
+        break
+    else:
+        print("Incorrect! Try again")
 
 
