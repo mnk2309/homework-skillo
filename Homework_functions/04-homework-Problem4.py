@@ -7,4 +7,4 @@ def fahrenheit(temp_xc):
 
 
 print(f'The temperature in °C is: {celsius(40):.1f}')
-print(f'The temperature in °F is: {fahrenheit(32):.1f}')
+print(f'The temperature in °F is: {fahrenheit(4):.1f}')
