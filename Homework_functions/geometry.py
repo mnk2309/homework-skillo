@@ -15,3 +15,4 @@ def rectangular_area(length, width):
 
 def circle_area(radius):
     return np.pi * radius ** 2
+
