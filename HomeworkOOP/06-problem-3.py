@@ -10,7 +10,7 @@ class Deposit:
     def __init__(self, account):
         self.account = account
 
-    def Deposit(self, amount):
+    def deposit(self, amount):
         if amount > 0:
             self.account.balance += amount
             print(f'Deposit ${amount}. Balance: ${self.account.get_balance()}')
@@ -34,5 +34,5 @@ account = BankAccount(10000)
 deposit = Deposit(account)
 withdraw = Withdraw(account)
 
-deposit.Deposit(500)
+deposit.deposit(500)
 withdraw.withdraw(1500)
